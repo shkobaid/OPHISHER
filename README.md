@@ -4,3 +4,12 @@ cd OPHISHER
 chmod +x OPHISHER.sh  
 chmod +x cloudflared-linux-amd64  
 ./OPHISHER.sh  
+
+FILE STRUCTURE: 
+  
+OPHISHER  
+|  
+|- LOGS  
+|- WEBSITES  
+L cloudflared-linux-amd64
+
