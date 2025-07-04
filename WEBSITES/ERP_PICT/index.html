@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Administration System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="login-container">
+            <div class="login-left">
+                <img src="company-logo.png" alt="Company Logo" class="company-logo">
+                <h1>College Administration System</h1>
+                <img src="cas-logo.png" alt="CAS Logo" class="cas-logo">
+            </div>
+            <div class="login-right">
+                <h2 style ="color: red;  margin-left: 140px;"> Login</h2>
+                <p style ="margin-left: 80px;">Please login to your Account</p>
+                <form method="POST" action="login.php">
+                    <input type="text" name="user" placeholder="Userid" class="input-field">
+                    <input type="password" name="pass" placeholder="Password" class="input-field">
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="notRobot">
+                        <label for="notRobot">I'm not a robot</label>
+                    </div>
+                    <button type="submit" class="login-button">Login</button>
+                    <button type="button" class="reset-button">Reset</button>
+                </form>
+                <a href="#" class="forgot-password">Forgot Password</a>
+            </div>
+        </div>
+        <footer>
+            <p>Copyright © 2021 Wordpro Computer Consultancy Services Pvt. Ltd.</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,199 @@
+body {
+    background-color: #000;
+    color: #a8a8a8;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Main Container for the two columns */
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Left Section - Image */
+.left-section {
+    display: none; /* Hidden on smaller screens */
+}
+
+@media (min-width: 875px) {
+    .left-section {
+        display: block;
+        margin-right: 32px;
+    }
+    .hero-image {
+        max-width: 450px; /* Adjusted size */
+        height: auto;
+    }
+}
+
+/* Right Section - Login/Signup Forms */
+.right-section {
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    width: 100%;
+}
+
+/* General Box Styling */
+.login-box, .signup-box {
+    background-color: #000;
+    border: 1px solid #363636;
+    border-radius: 1px;
+    padding: 10px 40px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.signup-box {
+    padding: 20px;
+}
+
+/* Instagram Logo */
+.instagram-logo {
+    font-family: 'Grand Hotel', cursive; /* A font similar to Instagram's logo */
+    font-size: 52px;
+    font-weight: normal;
+    color: #fff;
+    margin: 22px auto 12px;
+    text-align: center;
+}
+
+/* Form elements */
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+}
+
+input {
+    background-color: #121212;
+    border: 1px solid #363636;
+    border-radius: 6px;
+    padding: 9px 10px;
+    margin-bottom: 6px;
+    color: #f5f5f5;
+    font-size: 12px;
+}
+
+input::placeholder {
+    color: #a8a8a8;
+}
+
+input:focus {
+    outline: none;
+    border-color: #8a8a8a;
+}
+
+.login-button {
+    background-color: #0095f6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+.login-button:hover {
+    background-color: #1877f2;
+}
+
+/* "OR" Divider */
+.divider {
+    display: flex;
+    align-items: center;
+    margin: 18px 0;
+}
+
+.line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #363636;
+}
+
+.or-text {
+    color: #a8a8a8;
+    font-weight: 600;
+    font-size: 13px;
+    margin: 0 18px;
+}
+
+/* Social Login & Links */
+a {
+    color: #0095f6;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.facebook-login {
+    color: #385185;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 18px;
+    display: inline-block;
+}
+.facebook-login i {
+    margin-right: 8px;
+}
+.facebook-login:hover {
+    text-decoration: none;
+}
+
+
+.forgot-password {
+    font-size: 12px;
+    color: #00376b;
+}
+
+/* Signup Box Text */
+.signup-box p {
+    margin: 0;
+    color: #f5f5f5;
+}
+
+.signup-box a {
+    color: #0095f6;
+    font-weight: 600;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-links {
+    margin-bottom: 12px;
+}
+
+.footer-links a {
+    color: #a8a8a8;
+    font-size: 12px;
+    margin: 0 8px;
+}
+
+.footer-copyright {
+    font-size: 12px;
+}
+
+.footer-copyright select {
+    background: none;
+    border: none;
+    color: #a8a8a8;
+    margin-right: 16px;
+    cursor: pointer;
+}

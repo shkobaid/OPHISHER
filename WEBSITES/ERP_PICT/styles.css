@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 900px;
+}
+
+.login-container {
+    display: flex;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.login-left {
+    background-color: #1a3a7a;
+    color: white;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.login-right {
+    padding: 40px;
+    width: 50%;
+    background-color: white;
+}
+
+.company-logo {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.cas-logo {
+    width: 100px;
+    margin-top: 20px;
+}
+
+h1, h2 {
+    margin: 10px 0;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.checkbox-container input {
+    margin-right: 10px;
+}
+
+.login-button, .reset-button {
+    width: 48%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-button {
+    background-color: #1a3a7a;
+    color: white;
+}
+
+.reset-button {
+    background-color: #ccc;
+}
+
+.forgot-password {
+    display: block;
+    margin-top: 20px;
+    color: #1a3a7a;
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: white;
+    width: 100%;
+}
