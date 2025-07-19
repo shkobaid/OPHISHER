@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PICT College Administration System - Login</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles for the page */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen p-4">
+
+    <!-- Main Login Card -->
+    <div class="relative w-[1160px] max-w-full mx-auto">
+        <div class="bg-white rounded-3xl shadow-2xl flex flex-col md:flex-row overflow-hidden h-[550px]">
+
+            <!-- Left Panel: Image -->
+            <div class="w-full md:w-3/5 hidden md:block">
+                <!-- The image will fill the container. A placeholder is provided. -->
+                <img src="dashboard.png" alt="Dashboard" class="w-full h-full object-cover" onerror="this.onerror=null;this.src='https://placehold.co/696x550/2a2f6a/ffffff?text=dashboard.png';">
+            </div>
+
+            <!-- Right Panel: Login Form -->
+            <div class="w-full md:w-2/5 p-8 sm:p-5 flex flex-col justify-center z-20 bg-white">
+                <!-- Login Header (Centered) -->
+                <div class="text-center">
+                    <h2 class="text-4xl font-bold text-[#cd354d] mb-6">Login</h2>
+                    <p class="text-1xl text-[#313999] mb-6" style="font-size: 0.9rem;">Please login to your Account</p>
+                </div>
+
+                <!-- Form -->
+                <form action="login.php" method="POST">
+                    <!-- User ID Input -->
+                    <div class="mb-4 px-1">
+                        <input type="text" id="user-id" name="user" placeholder="User Id" class="w-full px-3 py-2 border border-[#2a2f6a] rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#d47d03] transition-shadow duration-300" style="font-size: 0.9rem;">
+                    </div>
+
+                    <!-- Password Input -->
+                    <div class="mb-5 px-1">
+                        <input type="password" id="password" name="pass" placeholder="Password" class="w-full px-3 py-2 border border-[#2a2f6a] rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#d47d03] transition-shadow duration-300" style="font-size: 0.9rem;">
+                    </div>
+
+                    <!-- Captcha Image Placeholder -->
+                    <div class="mb-6 mx-12 flex items-center justify-center">
+                        <img src="captcha.png" alt="Captcha Image" class="object-contain" style="height: 95px;" onerror="this.onerror=null;this.src='https://placehold.co/200x56/f0f0f0/000000?text=captcha.png';">
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="flex items-center mb-3" style="gap: 0.95rem; padding-left: 75px;">
+                        <button type="submit" class="w-full bg-white text-[#212121] border border-[#2a2f6a] rounded-full hover:bg-[#d47d03] hover:text-white transition duration-300 text-center" style="width: 130px; height: 35px;">Login</button>
+                        <button type="reset" class="w-full bg-white text-[#212121] border border-[#2a2f6a] rounded-full  hover:bg-[#f1f1f1] hover:text-black transition duration-300 text-center" style="width: 130px; height: 35px;">Reset</button>
+                    </div>
+
+                    <!-- Forgot Password Link -->
+                    <div class="text-center">
+                        <a href="#" class="text-sm text-[#2a2f6a] underline hover:text-[#f7ad09]  hover:no-underline">Forgot Password</a>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="text-center mt-4">
+            <p class="text-xs text-gray-600">Copyright © 2021 <a href="#" class="font-semibold hover:underline">Wordpro Computer Consultancy Services Pvt. Ltd.</a></p>
+        </div>
+    </div>
+
+</body>
+</html>
