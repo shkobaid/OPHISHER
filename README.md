@@ -1,22 +1,23 @@
 # OPHISHER  
 
-DEPENDENCIES:  
-  
-1) sudo apt install php  
-2) sudo apt install figlet    
-
-FILE STRUCTURE: 
-  
-OPHISHER  
+## DEPENDENCIES:  
+```bash  
+ sudo apt install php  
+ sudo apt install figlet    
+```
+## FILE STRUCTURE: 
+```bash  
+OPHISHER/ 
 |  
 |- LOGS  
 |- WEBSITES  
 L cloudflared-linux-amd64  
-  
-CLI COMMANDS:  
-  
+```  
+## CLI COMMANDS:  
+```bash  
 git clone https://github.com/shkobaid/OPHISHER.git  
 cd OPHISHER  
-chmod +x OPHISHER.sh  
-chmod +x cloudflared-linux-amd64  
-./OPHISHER.sh  
+(sudo) chmod +x OPHISHER.sh  
+(sudo) chmod +x cloudflared-linux-amd64  
+(sudo) ./OPHISHER.sh  
+```
